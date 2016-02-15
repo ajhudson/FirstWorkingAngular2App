@@ -10,11 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('angular2/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.todos = ["Todo 1", "Todo 2", "Todo 3"];
     }
+    AppComponent.prototype.addTodo = function (todo) {
+        this.todos.push(todo);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h2>Hello world, this is Andy\'s first Angular 2 app in VS2015</h2>'
+            template: "\n    <h4> Todos List</h4>\n    <h5>Number of Todos: <span class=\"badge\">{{todos.length}}</span></h5>\n    <ul class=\"list-group\">\n        <li *ngFor=\"#todo of todos\" class=\"list-group-item\">\n            {{todo}}\n        </li>\n    </ul>\n    <div class=\"form-inline\">\n        <input class=\"form-control\" #todotext>\n        <button class=\"btn btn-default\" (click)=\"addTodo(todotext.value)\">Add to</button>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
