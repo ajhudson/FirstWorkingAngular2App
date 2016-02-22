@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TestTwo", "src\TestTwo\TestTwo.xproj", "{ADEFCE9A-290E-406A-A211-FF2BF9BFB15B}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TodoApp", "src\TestTwo\TodoApp.xproj", "{ADEFCE9A-290E-406A-A211-FF2BF9BFB15B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
